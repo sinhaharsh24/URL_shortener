@@ -1,0 +1,1 @@
+export const serverUrl = import.meta.env.VITE_SERVER_UTL || "http://localhost:5003/api"

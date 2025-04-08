@@ -6,7 +6,7 @@ import shortUrl from "./routes/shortUrl"
 dotenv.config();
 connectDB();
 
-const port = process.env.post || 5002;
+const port = process.env.post || 5003;
 
 const app = express();
 app.use(express.json());
@@ -21,6 +21,6 @@ app.use(
 app.use("/api/", shortUrl);
 
 app.listen(port, () => {
-    console.log('server started successfully on port : 5002');
+    console.log('server started successfully on port : 5003');
 });
 

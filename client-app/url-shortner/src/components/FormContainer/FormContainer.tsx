@@ -1,12 +1,22 @@
 import * as React from "react";
+import axios from "axios";
+import { serverUrl } from "../../helpers/Constants";
 
 interface IFormContainerProps {}
 
 const FormContainer: React.FunctionComponent<IFormContainerProps> = () => {
   const [fullUrl, setfullUrl] = React.useState<string>("");
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-
-  }
+    e.preventDefault();
+    try {
+        await axios.post(`${serverUrl}/shortUrl`, {
+            fullUrl: fullUrl,
+        });
+        setfullUrl("");
+    } catch (error) {
+        console.log(error);
+    }
+  };
 
   return (
     <div className="container mx-auto max-w-screen-2xl p-2">
