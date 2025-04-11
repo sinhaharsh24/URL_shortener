@@ -9,7 +9,7 @@ const FormContainer: React.FunctionComponent<IFormContainerProps> = () => {
   const [shortUrl, setShortUrl] = React.useState<string>("");
   const baseUrl =
   import.meta.env.MODE === "development"
-    ? "http://localhost:5003/api/shortUrl/"
+    ? "http://localhost:5003/api/shortUrl"
     : "https://urlshortner.link";
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

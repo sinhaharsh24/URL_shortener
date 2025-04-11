@@ -3,16 +3,17 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Container from './components/Container/Container';
 
-interface IAppProps {
-}
+interface IAppProps {}
 
 const App: React.FunctionComponent<IAppProps> = (props) => {
   return (
-    <>
+    <div className="min-h-screen flex flex-col bg-purple-300">
       <Header />
-      <Container />
+      <main className="flex-grow">
+        <Container />
+      </main>
       <Footer />
-    </>
+    </div>
   );
 };
 
