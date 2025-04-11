@@ -3,7 +3,6 @@
 
 A simple and visually appealing URL shortener web app built using **React + TypeScript** with **Tailwind CSS** and **Node.js + Express.js + MongoDB**. Paste your long URLs and get a shortened version instantly!
 
-![URL Shortener UI Preview](./preview.png)
 
 ## 🚀 Features
 
@@ -21,6 +20,8 @@ A simple and visually appealing URL shortener web app built using **React + Type
 - Tailwind CSS
 
 ## 📷 UI Screenshot
+
+![URL Shortener UI Preview](./preview.png)
 
 > The app is responsive and centered with the footer fixed to the bottom of the screen, regardless of content height.
 
