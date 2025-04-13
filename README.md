@@ -21,7 +21,7 @@ A simple and visually appealing URL shortener web app built using **React + Type
 
 ## 📷 UI Screenshot
 
-![URL Shortener UI Preview](./preview.png)
+![URL Shortener UI Preview](./preview.jpg)
 
 > The app is responsive and centered with the footer fixed to the bottom of the screen, regardless of content height.
 
